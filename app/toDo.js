@@ -5,5 +5,9 @@
     this._complete = complete === true ? true : false;
   }
 
+  ToDoModel.prototype.isComplete = function(){
+    return this._complete;
+  };
+
   exports.ToDoModel = ToDoModel;
 })(this);

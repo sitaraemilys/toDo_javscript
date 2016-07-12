@@ -10,13 +10,12 @@ describe("toDoModel", function(){
     toDo = new ToDoModel("thank Matt");
   });
 
-  it("stores a task", function(){
-    expect(toDo._task).equal("thank Matt");
+  it("allows creatoin of a new ToDo", function(){
+    expect(toDo).instanceOf(ToDoModel);
   });
 
-  it("stores a complete boolean", function(){
-    expect(toDo._complete).equal(false);
+  it("completed status defaults to false", function(){
+    expect(toDo.isComplete()).equal(false);
   });
-
 
 });
