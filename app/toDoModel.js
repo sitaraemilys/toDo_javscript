@@ -5,12 +5,14 @@
     this._complete = complete === true ? true : false;
   }
 
-  ToDoModel.prototype.isComplete = function(){
-    return this._complete;
-  };
+  ToDoModel.prototype = {
+    isComplete: function(){
+      return this._complete;
+    },
 
-  ToDoModel.prototype.task = function(){
-    return this._task;
+    task: function(){
+      return this._task;
+    }
   };
 
   exports.ToDoModel = ToDoModel;
