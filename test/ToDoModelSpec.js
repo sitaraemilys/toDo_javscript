@@ -1,5 +1,5 @@
 var expect = require("chai").expect;
-var ToDoLib = require("../app/toDo");
+var ToDoLib = require("../app/toDoModel");
 var ToDoModel = ToDoLib.ToDoModel;
 
 describe("toDoModel", function(){
