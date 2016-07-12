@@ -1,11 +1,21 @@
 var expect = require("chai").expect;
-var ToDoModel = require("../app/toDo").ToDoModel;
+var ToDoLib = require("../app/toDo");
+var ToDoModel = ToDoLib.ToDoModel;
 
 describe("toDoModel", function(){
 
+  var ToDo;
+
+  beforeEach(function(){
+    toDo = new ToDoModel("thank Matt");
+  });
+
   it("stores a task", function(){
-    var toDo = new ToDoModel("thank Matt");
     expect(toDo._task).equal("thank Matt");
+  });
+
+  it("stores a complete boolean", function(){
+    expect(toDo._complete).equal(false);
   });
 
 
