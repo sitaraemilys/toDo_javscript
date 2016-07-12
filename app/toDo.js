@@ -9,5 +9,9 @@
     return this._complete;
   };
 
+  ToDoModel.prototype.task = function(){
+    return this._task;
+  };
+
   exports.ToDoModel = ToDoModel;
 })(this);
